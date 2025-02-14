@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Customizer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <!-- Control panel for countdown settings -->
+    <div class="controls">
+        <label>Date: <input type="datetime-local" id="dateInput"></label>
+        <label><input type="checkbox" id="colorAll"> Colour All</label>
+        <label>Day Colour: <input type="color" id="dayColorInput" value="#ffffff"></label>
+        <label>Hour Colour: <input type="color" id="hourColorInput" value="#ffffff"></label>
+        <label>Minutes Colour: <input type="color" id="minuteColorInput" value="#ffffff"></label>
+        <label>Seconds Colour: <input type="color" id="secondColorInput" value="#ffffff"></label>
+        <label>Text Size: <input type="range" id="sizeInput" min="20" max="100" value="48"></label>
+        <label>Upload File: <input type="file" id="fileInput" accept="video/mp4, image/png"></label>
+    </div>
+    
+    <!-- Countdown display -->
+    <div id="countdown">
+        <span id="days" style="color: #ffffff;">00</span>:
+        <span id="hours" style="color: #ffffff;">00</span>:
+        <span id="minutes" style="color: #ffffff;">00</span>:
+        <span id="seconds" style="color: #ffffff;">00</span>
+    </div>
+    
+    <!-- Background video element -->
+    <video id="background" autoplay loop muted></video>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
